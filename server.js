@@ -92,7 +92,7 @@ comenzarJuego = () => {
     letra = letras[Math.floor(Math.random()*26)];
     console.log(letra);
     io.emit("Inicio", {jugadores, letra, categorias});
-    //juegoEnCurso = true;
+    juegoEnCurso = true;
   }, 3000)
   
 };
